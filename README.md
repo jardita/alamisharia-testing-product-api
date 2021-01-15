@@ -50,7 +50,7 @@ $ docker build . -t alamisharia-testing-product-api
 
 Run
 ```sh
-$ docker run --name alamisharia-testing-product-api -p <port>:8080 alami
+$ docker run --name alamisharia-testing-product-api -p <port>:8089 alami
 ```
 
 Stop
