@@ -1,4 +1,4 @@
-# ALAMI Sharia REST API
+# ALAMI Sharia Testing Product API
 
 ### Prerequisites
    - Project : Maven
@@ -18,12 +18,13 @@ https://www.getpostman.com/collections/eae70952d07e338338c0
 ### Database
 #### MySQL
 ```mysql
-CREATE DATABASE alamisharia CHARACTER SET utf8 COLLATE utf8_general_ci;
+CREATE DATABASE testing_product CHARACTER SET utf8 COLLATE utf8_general_ci;
 ```
 #### PostgreSQL
 ```CREATE SCHEMA IF NOT EXISTS testing_product AUTHORIZATION alami;```
 
 
+## Linux / Unix
 ### Local
 Build
 ```sh
@@ -44,23 +45,23 @@ $ sh stop.sh
 
 Build
 ```sh
-$ docker build . -t alami
+$ docker build . -t alamisharia-testing-product-api
 ```
 
 Run
 ```sh
-$ docker run --name alami -p <port>:8080 alami
+$ docker run --name alamisharia-testing-product-api -p <port>:8080 alami
 ```
 
 Stop
 ```sh
-$ docker stop alami
-$ docker rm alami
+$ docker stop alamisharia-testing-product-api
+$ docker rm alamisharia-testing-product-api
 ```
 
 Restart
 ```sh
-$ docker restart alami
+$ docker restart alamisharia-testing-product-api
 ```
 
 
