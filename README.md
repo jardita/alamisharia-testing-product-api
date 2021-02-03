@@ -6,9 +6,13 @@
    - Database : MySQL or PostgreSQL
    - Framework : Spring Boot
    
-## Postman Documentation
+## API Documentation
 ```
 https://www.getpostman.com/collections/eae70952d07e338338c0
+```
+or
+```
+https://alamitestingproductapi.docs.apiary.io/
 ```
 
 ## Connection
