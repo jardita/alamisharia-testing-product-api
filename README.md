@@ -21,7 +21,9 @@ https://www.getpostman.com/collections/eae70952d07e338338c0
 CREATE DATABASE testing_product CHARACTER SET utf8 COLLATE utf8_general_ci;
 ```
 #### PostgreSQL
-```CREATE SCHEMA IF NOT EXISTS testing_product AUTHORIZATION alami;```
+```postgresql
+CREATE SCHEMA IF NOT EXISTS testing_product AUTHORIZATION alami;
+```
 
 
 ## Linux / Unix
@@ -50,7 +52,7 @@ $ docker build . -t alamisharia-testing-product-api
 
 Run
 ```sh
-$ docker run --name alamisharia-testing-product-api -p <port>:8089 alami
+$ docker run --name alamisharia-testing-product-api -p <port>:8089 alamisharia-testing-product-api
 ```
 
 Stop
