@@ -30,6 +30,13 @@ public class Seller {
     @NotBlank
     private String kota;
 
+    @Column(length = 50)
+    @Size(max = 50)
+    private String jenis;
+
+    @Column(name = "tahun_berdiri", length = 4)
+    private Integer tahunBerdiri;
+
     @JsonBackReference
     @OneToMany(
         cascade = CascadeType.ALL,
