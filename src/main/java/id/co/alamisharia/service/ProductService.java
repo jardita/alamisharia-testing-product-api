@@ -27,7 +27,7 @@ public class ProductService {
     }
 
     public List<Product> searchProductByKeyword(String keyword) {
-        return repository.findByNamaContains(keyword);
+        return repository.findByNamaContainingIgnoreCase(keyword);
     }
 
     public Page<Product> findAll(Pageable paging) {

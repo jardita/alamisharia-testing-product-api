@@ -3,11 +3,12 @@ package id.co.alamisharia.repository;
 import id.co.alamisharia.entity.Product;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
+import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.repository.CrudRepository;
 
 import java.util.List;
 
-public interface ProductRepository  extends CrudRepository<Product, Long> {
+public interface ProductRepository  extends JpaRepository<Product, Long> {
 
     Page<Product> findAll(Pageable pageable);
 
@@ -16,6 +17,8 @@ public interface ProductRepository  extends CrudRepository<Product, Long> {
     List<Product> findBySellerId(long sellerId);
 
     List<Product> findByNamaContains(String keyword);
+
+    List<Product> findByNamaContainingIgnoreCase(String keyword);
 
     boolean existsByIdOrAndNamaAndSellerId(long id, String nama, long sellerId);
 }
